@@ -1,1 +1,13 @@
+on: [push]
 
+defaults:
+  run:
+    shell: powershell
+
+jobs:
+  output:
+    runs-on: windows-latest
+    steps:
+      - run:  |
+          chcp
+          echo 'aäoöuü'
