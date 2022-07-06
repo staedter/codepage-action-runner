@@ -9,5 +9,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - run:  |
-          chcp
+          chcp 850
           echo 'aäoöuü'
