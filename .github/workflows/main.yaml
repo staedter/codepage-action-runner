@@ -9,7 +9,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - run:  |
-          chcp 
+          chcp 1252
           echo 'aäoöuü'
           $umlaut = 'aäoöuü'
           chcp 1252
