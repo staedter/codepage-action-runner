@@ -11,9 +11,10 @@ jobs:
       - run:  |
           chcp 1252
           echo 'aäoöuü'
+          
           $umlaut = 'aäoöuü'
           chcp 1252
-          echo 'aäoöuü'
+          echo 'ßßß'
           echo $umlaut 
           $umlaut > out.txt
           cat out.txt
