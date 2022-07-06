@@ -9,5 +9,16 @@ jobs:
     runs-on: windows-latest
     steps:
       - run:  |
+          chcp 
+          echo 'aäoöuü'
+          $umlaut = 'aäoöuü'
           chcp 1252
           echo 'aäoöuü'
+          echo $umlaut 
+          $umlaut > out.txt
+          cat out.txt
+          chcp 850
+          echo 'aäoöuü'
+          echo $umlaut 
+          $umlaut > out.txt
+          cat out.txt
